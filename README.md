@@ -10,7 +10,7 @@ Traffic between WebView and stunnel-client and the traffic between stunnel-serve
 This allows us to have a HomeAssistant in a local network that is reachable from the Internet only via the secured stunnel-server (router setup allows traffic only to the stunnel-server, not the HomeAssistant). Since the stunnel-server **requires** authentication via PSK it is not (easily?) possible for anyone but owners of the PSKs to connect to the HomeAssistant.
 
 # Usage
-The app can't possibly know where your HomeAssistant server is located without being told so. That's why you need to add a config file 'config.json' in 'app/src/main/assets/config/' before building the app. Here's how that might look like:
+The app can't possibly know where your HomeAssistant server is located without being told so. That's why you need to add a config file 'redirect.json' in 'app/src/main/assets/config/' before building the app. Here's what that might look like:
 
 ```json
 {
@@ -26,7 +26,7 @@ The app can't possibly know where your HomeAssistant server is located without b
 Usually you should use a FQDN as remoteAddress (for example using services such as www.noip.com).
 
 ## stunnel-server
-Here's how a corresponding stunnel config for the stunnel-server would look like:
+Here's what a corresponding Stunnel config for the stunnel-server would look like:
 
 ```
 [https-hass-psk]

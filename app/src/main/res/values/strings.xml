@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">HomeAssistant Stunnel</string>
     <string name="btn_ok">OK</string>
-    <string name="home_assistant_msg_config_missing_or_invalid">"Oops, seems like you're missing a config file: there's nowhere to connect to. Your file needs to be called 'config.json' and goes into 'app/src/main/assets/config/'. Here's an example:\n{\n  \"localPort\": 12345,\n  \"remoteAddress\": \"google.com\",\n  \"remotePort\": 443,\n  \"preSharedKey\": {\n    \"identity\": \"MyName\",\n    \"key\": \"MyPreSharedKey\"\n  }\n} "</string>
+    <string name="home_assistant_msg_config_missing_or_invalid">"Oops, seems like you're missing a config file: there's nowhere to connect to. Your file needs to be called 'redirect.json' and goes into 'app/src/main/assets/config/'. Here's an example:\n{\n  \"localPort\": 12345,\n  \"remoteAddress\": \"google.com\",\n  \"remotePort\": 443,\n  \"preSharedKey\": {\n    \"identity\": \"MyName\",\n    \"key\": \"MyPreSharedKey\"\n  }\n} "</string>
 </resources>
